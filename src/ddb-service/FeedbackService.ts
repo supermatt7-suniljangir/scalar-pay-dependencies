@@ -6,7 +6,7 @@ import { PutCommandInput, GetCommandInput } from "@aws-sdk/lib-dynamodb";
 
 const logger = createLogger("FeedbackService");
 
-class FeedbackServiceError extends Error {
+export class FeedbackServiceError extends Error {
   constructor(
     message: string,
     public readonly code: string
@@ -16,7 +16,7 @@ class FeedbackServiceError extends Error {
   }
 }
 
-class FeedbackService {
+export class FeedbackService {
   private static readonly className = "FeedbackService";
   private static readonly feedbackTableName = config.FEEDBACK_TABLE_NAME;
 

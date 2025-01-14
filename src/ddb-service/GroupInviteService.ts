@@ -6,7 +6,7 @@ import { PutCommandInput, GetCommandInput } from "@aws-sdk/lib-dynamodb";
 
 const logger = createLogger("GroupInviteService");
 
-class GroupInviteServiceError extends Error {
+export class GroupInviteServiceError extends Error {
   constructor(
     message: string,
     public readonly code: string
@@ -16,7 +16,7 @@ class GroupInviteServiceError extends Error {
   }
 }
 
-class GroupInviteService {
+export class GroupInviteService {
   private static readonly className = "GroupInviteService";
   private static readonly groupInviteTableName = config.GROUP_INVITE_TABLE_NAME;
 

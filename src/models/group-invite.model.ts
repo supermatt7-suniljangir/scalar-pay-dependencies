@@ -10,7 +10,7 @@
  * @property {Date} created_at - The date and time when the invite was created.
  * @property {Date} updated_at - The date and time when the invite was last updated.
  */
-interface GroupInvite {
+export interface GroupInvite {
   id: string;
   group_id: string;
   creator_id: string;

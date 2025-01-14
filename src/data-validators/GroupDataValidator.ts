@@ -1,4 +1,3 @@
-import { AuthenticatedRequest } from "../middleware/verify-token";
 import { GROUP_TYPE, Member } from "../models/group.model";
 
 /**

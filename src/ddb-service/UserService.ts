@@ -23,7 +23,7 @@ class UserServiceError extends Error {
   }
 }
 
-class UserService {
+export class UserService {
   private static readonly className = "UserService";
   private static readonly userTableName = config.USER_TABLE_NAME;
   private static readonly groupTableName = config.GROUP_TABLE_NAME;

@@ -7,7 +7,7 @@ export enum Currency {
   EURO = "EUR",
 }
 
-interface SupportedCountry {
+export interface SupportedCountry {
   code: CountryCode;
   name: string;
   currency: Currency;
@@ -19,7 +19,7 @@ const SUPPORTED_COUNTRIES: SupportedCountry[] = [
 
 Object.freeze(SUPPORTED_COUNTRIES);
 
-function validateSupportedCountries(countries: SupportedCountry[]): boolean {
+export function validateSupportedCountries(countries: SupportedCountry[]): boolean {
   const seenCountryCodes = new Set<CountryCode>();
 
   for (const country of countries) {

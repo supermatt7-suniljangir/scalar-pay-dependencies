@@ -1,6 +1,9 @@
 # Ignore JavaScript files in the entire project
 *.js
-
+.prettierrc
+.eslintrc
+package-lock.json
+.env
 
 # Ignore map files generated during compilation
 *.js.map

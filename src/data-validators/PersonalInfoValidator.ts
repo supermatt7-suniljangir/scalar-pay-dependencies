@@ -1,4 +1,3 @@
-import { UpdatePersonalInfoRequest } from "../controllers/UserController";
 import { CountryCode } from "../types/country-code";
 import { Address, DateOfBirth } from "../types/user-types";
 import { ValidationError, ValidationResult } from "./validation-types";
@@ -13,9 +12,7 @@ export class PersonalInfoValidator {
   /**
    * Validates personal information fields with detailed constraints
    */
-  static validatePersonalInfo(
-    data: UpdatePersonalInfoRequest
-  ): ValidationResult {
+  static validatePersonalInfo(data: any): ValidationResult {
     const errors: ValidationError[] = [];
 
     // Validate first name

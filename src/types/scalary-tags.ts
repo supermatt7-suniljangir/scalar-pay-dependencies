@@ -3,7 +3,7 @@ export enum ScalarTagId {
   DAY_ONE_ON_SCALAR = "day-one-on-scalar",
 }
 
-interface ScalarTag {
+export interface ScalarTag {
   tagId: ScalarTagId;
   tagName: string;
   tagDescription: string;
@@ -25,7 +25,7 @@ const scalarTags: ScalarTag[] = [
 Object.freeze(scalarTags);
 
 // Validation function for Scalar Tags
-function validateScalarTagsConfig(scalarTags: ScalarTag[]): boolean {
+export function validateScalarTagsConfig(scalarTags: ScalarTag[]): boolean {
   const seenTagIds = new Set<ScalarTagId>();
 
   for (const tag of scalarTags) {

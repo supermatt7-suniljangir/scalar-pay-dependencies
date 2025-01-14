@@ -11,7 +11,7 @@ import {
 
 const logger = createLogger("GroupService");
 
-class GroupServiceError extends Error {
+export class GroupServiceError extends Error {
   constructor(
     message: string,
     public readonly code: string

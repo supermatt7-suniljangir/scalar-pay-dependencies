@@ -15,6 +15,7 @@
     "@aws-sdk/credential-provider-ini": "^3.723.0",
     "@aws-sdk/credential-providers": "^3.723.0",
     "@aws-sdk/lib-dynamodb": "^3.724.0",
+    "dotenv": "^16.4.7",
     "google-auth-library": "^9.15.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.4",

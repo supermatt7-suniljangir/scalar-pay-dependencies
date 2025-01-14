@@ -3,7 +3,7 @@ import { LogLevel } from "../types/log-level";
 
 dotenv.config();
 
-enum STAGE {
+export enum STAGE {
   PROD = "prod",
   DEV = "dev",
 }
