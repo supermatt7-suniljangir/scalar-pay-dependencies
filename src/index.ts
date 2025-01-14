@@ -10,7 +10,6 @@ export * from './models/group.model';
 export * from './models/user.model';
 export * from './models/feedback.model';
 export * from './models/group-invite.model';
-export * from './models/queue.model';
 export * from './models/user.model';
 export * from './models/user-groups.model';
 export * from './types/country-code';
